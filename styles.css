@@ -35,6 +35,28 @@ body {
   transform: translate(-50%);
 }
 
+.bolt {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: black;
+  box-shadow: 2px 2px 5px rgb(99, 96, 96);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  content: "";
+  background: white;
+  width: 5px;
+  height: 30px;
+  transform: rotate(60deg);
+}
+
 .longest {
   transform: rotate(30deg);
   height: 29rem;
