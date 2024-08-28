@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #282c34;
+}
+
+.pendulum-container {
+  position: relative;
+  width: 80%;
+  height: 60vh;
+  background: #fff0f0;
+}
+
+.pendulum {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: top center;
+  width: 5px;
+  height: 21rem;
+  background: #61dafb;
+  transform: rotate(30deg);
+  animation: swing 2s infinite ease-in-out;
+}
+.ball {
+  padding: 25px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #83cde4 30%, #278596);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.longest {
+  transform: rotate(30deg);
+  height: 29rem;
+  animation-delay: -0.6s;
+}
+.longer {
+  transform: rotate(30deg);
+  height: 25rem;
+  animation-delay: -0.3s;
+}
+.shortest {
+  transform: rotate(30deg);
+  height: 13rem;
+  animation-delay: 0.5s;
+}
+.shorter {
+  transform: rotate(30deg);
+  height: 17rem;
+  animation-delay: 0.3s;
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+}
